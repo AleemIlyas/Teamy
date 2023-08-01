@@ -1,0 +1,20 @@
+.Layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #EEEBE5;
+}
+
+.Layout .Nav{
+    position: relative;
+    width: 23%;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+
+.Layout .Container{
+    position: relative;
+    width: 77%;
+}
+

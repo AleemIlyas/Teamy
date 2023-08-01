@@ -1,0 +1,16 @@
+.Container{
+    background-color: #EEEBE5;
+}
+
+.Container div{
+    background-color: #fff;
+}
+
+.Container input{
+    background-color: #EAEAEA;
+    outline: none;
+}
+
+.Container button{
+    background-color: #CEF9C6;
+}

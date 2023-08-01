@@ -1,0 +1,9 @@
+.list{
+    margin : 7px 0px 7px auto;
+}
+
+.activeclass {
+  background-color: var(--light-color);
+  border-left: 4px solid #FFC200; /* Adjust padding as needed to accommodate the border */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+}

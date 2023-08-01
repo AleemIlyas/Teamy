@@ -1,0 +1,12 @@
+.user{
+    background-color: #202020;
+    color: #9B9B9B;
+}
+
+.Info{
+    color: white;
+}
+
+.Info p {
+    color: var(--light-color);
+}
