@@ -42,7 +42,7 @@ export default function AddProject(props) {
           })
           .catch(err=>{
             setLoading(false)
-            toaster.notify('something went wrong!')
+            toaster.notify(err)
           })
         }
       };

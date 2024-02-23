@@ -9,7 +9,7 @@ export default function Menu() {
         </div>
         <ul className={["text-white text-sm" , styles.list].join(" ")}>
           <li> <Link to="/dashboard">Home</Link> </li>
-          <li>My Tasks</li>
+          <li><Link to="/dashboard/myTasks">My Tasks</Link></li>
           <li>Notifications</li>
         </ul>
         </div>

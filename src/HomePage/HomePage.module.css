@@ -1,21 +1,20 @@
-
-.header{
+.header {
     display: flex;
     justify-content: center;
 }
 
-.Logo{
+.Logo {
     width: 25%;
     text-align: right;
-    
+
 }
 
-.Logo img{
+.Logo img {
     margin-top: 1.2em;
     object-fit: cover;
 }
 
-.Nav{
+.Nav {
     width: 75%;
     background: url('/homePageImages/c.svg');
     background-size: cover;
@@ -36,23 +35,23 @@
     margin: 0 2rem;
 }
 
-.Nav ul li:hover{
+.Nav ul li:hover {
     cursor: pointer;
 }
 
-.Nav ul li a{
+.Nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
-.Nav ul li:last-child{
+.Nav ul li:last-child {
     border-radius: 1.5rem;
     padding: 8px 24px;
     background-color: #FF8923;
     margin-top: -.5em;
 }
 
-.Hero{
+.Hero {
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -60,11 +59,11 @@
     justify-content: right;
 }
 
-.Hero .Context{
+.Hero .Context {
     display: flex;
     flex-direction: column;
     width: 55%;
-    
+
 }
 
 
@@ -91,7 +90,7 @@
     justify-content: center;
     color: #fff;
     font-size: 2rem;
-    padding:6px 12px;
+    padding: 6px 12px;
     border-radius: 4rem;
     background-color: #3D37F1;
 }
@@ -102,7 +101,7 @@
 }
 
 
-.Services{
+.Services {
     width: 95%;
     background-color: #FBFCFD;
     padding: 24px 0;
@@ -110,7 +109,7 @@
     margin: 4rem auto;
 }
 
-.Services .Section1{
+.Services .Section1 {
     width: 60%;
     margin: 0 auto;
 }
@@ -120,12 +119,12 @@
     margin-block-end: 0em;
 }
 
-.Services .Section1 h3{
+.Services .Section1 h3 {
     font-size: 1.4rem;
     color: #3D37F1;
 }
 
-.Services .Section1 h2{
+.Services .Section1 h2 {
     font-size: 2rem;
     font-weight: 300;
 }
@@ -134,13 +133,13 @@
 .Services .Cards {
     display: grid;
     margin-top: 3rem;
-    grid-template-columns:repeat( auto-fill , minmax(370px,1fr) ) ;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
     grid-auto-rows: 451px;
     justify-content: center;
     gap: 8px;
 }
 
-.Services .Cards .Card{
+.Services .Cards .Card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,27 +147,27 @@
     color: white;
 }
 
-.Services .Cards .card1{
+.Services .Cards .card1 {
     background-color: #FBBA77;
 }
 
-.Services .Cards .card2{
+.Services .Cards .card2 {
     background-color: #41EAE3;
 }
 
-.Services .Cards .card3{
+.Services .Cards .card3 {
     background-color: #69529F;
 }
 
-.Services .Cards .card4{
+.Services .Cards .card4 {
     background-color: #4386D2;
 }
 
-.Services .Cards .card5{
+.Services .Cards .card5 {
     background-color: #A5A2F6;
 }
 
-.About{
+.About {
     display: flex;
     padding: 16px;
     width: 90%;
@@ -178,11 +177,11 @@
 
 }
 
-.About div:first-child{
+.About div:first-child {
     width: 50%;
 }
 
-.About div:last-child{
+.About div:last-child {
     width: 40%;
 }
 
@@ -195,7 +194,7 @@
     font-weight: 500;
 }
 
-.Success{
+.Success {
     margin: 2rem 0;
     padding: 2rem 0;
     background-color: #FBFCFD;
@@ -206,14 +205,14 @@
     font-size: 1.4rem;
 }
 
-.Success .Cards{
+.Success .Cards {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.Success .Cards .Card{
+.Success .Cards .Card {
     width: 25%;
     box-shadow: 0px 1px 6px 0px #000;
     min-width: 350px;
@@ -224,7 +223,7 @@
     min-height: 29rem;
 }
 
-.Success .Cards .Card:hover{
+.Success .Cards .Card:hover {
     border: .1px solid blue;
 }
 
@@ -236,72 +235,72 @@
     background-color: white;
 }
 
-.Success .Cards .Card  h3{
+.Success .Cards .Card h3 {
     font-size: 18px;
     font-weight: 400;
     margin-block-start: 0;
     margin-block-end: 1px;
-    
+
 }
 
-.Success .Cards .Card  p{
+.Success .Cards .Card p {
     margin-block-start: 4px;
     margin-block-end: 1px;
     font-size: 14px;
 }
 
-.Success .Cards .Card div:last-child{
+.Success .Cards .Card div:last-child {
     padding: 0px 18px 6px 18px;
 }
 
-.Success .Cards .Card div > img{
+.Success .Cards .Card div>img {
     height: 200px;
     width: 100%;
     clip-path: polygon(0% 0%, 85% 0%, 100% 0%, 100% 85%, 61.7% 93.8%, 22.8% 86.3%, 0% 100%, 0% 15%);
 }
 
 
-.Footer{
+.Footer {
     background-color: #fff;
 
 }
 
-.Footer .Container{
+.Footer .Container {
     width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat( auto-fill , minmax(25%,180px) );
-    padding: 1rem 2rem ;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 180px));
+    padding: 1rem 2rem;
 }
 
-.Footer .Container div{
+.Footer .Container div {
     padding: 6px;
 }
 
 
-.Footer .Container div:first-child ul{
+.Footer .Container div:first-child ul {
     display: flex;
     justify-content: left;
     padding-left: 0;
 }
 
-.Footer .Container div:first-child ul li{
+.Footer .Container div:first-child ul li {
     list-style: none;
     font-size: 2.5rem;
     margin: 0 7px;
 }
 
-.Footer .Container div:first-child p{
+.Footer .Container div:first-child p {
     margin-left: 8px;
     font-size: 14px;
 }
 
 .Footer .Container div:first-child ul li * {
-    fill:#0A315A;
+    fill: #0A315A;
 
 }
 
-.Footer .Container div:not(:first-child){
+.Footer .Container div:not(:first-child) {
     margin-left: 4rem;
     color: #747474;
 }
@@ -328,24 +327,25 @@
     margin: 18px 0;
 }
 
-.Footer div:last-child{
+.Footer div:last-child {
     width: 80%;
     margin: 0 auto;
     font-size: 12px;
 }
 
 @media screen and (max-width : 1025px) {
-    .Nav{
+    .Nav {
         margin-top: -2rem;
         height: 16.2rem;
     }
-    .Nav ul{
+
+    .Nav ul {
         margin-top: 4rem;
     }
 }
 
 @media screen and (min-width : 1439px) {
-    .Nav{
-        height: 23rem;
+    .Nav {
+        height: 24.5rem;
     }
 }
