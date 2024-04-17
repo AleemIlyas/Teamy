@@ -139,6 +139,8 @@
     gap: 8px;
 }
 
+
+
 .Services .Cards .Card {
     display: flex;
     flex-direction: column;
@@ -337,6 +339,7 @@
     .Nav {
         margin-top: -2rem;
         height: 16.2rem;
+        background-size: cover;
     }
 
     .Nav ul {
@@ -347,5 +350,15 @@
 @media screen and (min-width : 1439px) {
     .Nav {
         height: 24.5rem;
+    }
+}
+
+@media screen and (min-width : 1639px) {
+    .Nav {
+        background-size: auto;
+    }
+
+    .Services {
+        width: 70%;
     }
 }
