@@ -4,7 +4,7 @@ import Checked from "/Projects/checked.svg";
 import { useParams, useLocation } from "react-router-dom";
 const Comment = React.lazy(() => import("./Comment/Comment"));
 import Spinner from "../../Components/UI/Spinner/Spinner";
-import axios from "axios";
+import axiosInstance from "../../../axios/axiosInstance";
 
 export default function ShowDetail() {
   const { taskId } = useParams();
@@ -52,12 +52,9 @@ export default function ShowDetail() {
   }
 
   async function fetchTask() {
-    const taskPromise = await axios.get(
-      `http://localhost:3300/${apiPath}/${taskId}`,
-      {
-        withCredentials: true,
-      }
-    );
+    const taskPromise = await axiosInstance.get(`/${apiPath}/${taskId}`, {
+      withCredentials: true,
+    });
     setLoading(false);
     setTask(taskPromise.data[0]);
   }

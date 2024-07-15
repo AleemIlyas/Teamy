@@ -1,12 +1,11 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+import axiosInstance from '../../axios/axiosInstance';
 
 // Async thunk for user login
 export const loginUser = createAsyncThunk('user/login', async (credentials) => {
   try {
-    console.log(credentials)
-    const response = await axios.post('http://localhost:3300/login', credentials  ,{
-     withCredentials : true
+    const response = await axiosInstance.post('/login', credentials, {
+      withCredentials: true
     });
     return response.data;
   } catch (error) {
@@ -18,8 +17,8 @@ export const loginUser = createAsyncThunk('user/login', async (credentials) => {
 // Async thunk for user signup
 export const signupUser = createAsyncThunk('user/signup', async (userData) => {
   try {
-    const response = await axios.post('http://localhost:3300/SignUp',userData , {
-     withCredentials : true
+    const response = await axiosInstance.post('/SignUp', userData, {
+      withCredentials: true
     });
     return response.data;
   } catch (error) {

@@ -1,25 +1,25 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+import axiosInstance from '../../axios/axiosInstance';
 
 // Async thunk action to get projects
 export const getTeams = createAsyncThunk('Teams/getTeams', async () => {
   try {
-    const response = await axios.get('http://localhost:3300/getTeams' ,{
-        withCredentials : true
-    } ); // Adjust the API endpoint based on your server configuration
+    const response = await axiosInstance.get('/getTeams', {
+      withCredentials: true
+    }); // Adjust the API endpoint based on your server configuration
     return response.data;
   } catch (error) {
-    throw Error(error.response.data.error || 'something went wrong!' );
+    throw Error(error.response.data.error || 'something went wrong!');
   }
 });
 
 // Async thunk action to add a project
 export const addTeam = createAsyncThunk('Teams/addTeam', async (projectData) => {
   try {
-    const response = await axios.post('http://localhost:3300/addTeam', projectData); // Adjust the API endpoint based on your server configuration
+    const response = await axiosInstance.post('/addTeam', projectData); // Adjust the API endpoint based on your server configuration
     return response.data;
   } catch (error) {
-    throw Error(error.response.data.error || 'something went wrong!' );
+    throw Error(error.response.data.error || 'something went wrong!');
   }
 });
 

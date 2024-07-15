@@ -3,7 +3,7 @@ import Lists from "../../Container/List/List";
 import styles from "./Tasks.module.css";
 import ShowDetail from "../../Container/showDetail/showDetail";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+import axiosInstance from "../../../axios/axiosInstance";
 import Spinner from "../UI/Spinner/Spinner";
 import Modal from "../UI/Modal/Modal";
 import AddTask from "./addTask/addTask";
@@ -23,23 +23,17 @@ export default function Tasks() {
   }, [id]);
 
   async function fetchTask() {
-    const taskPromise = await axios.get(
-      `http://localhost:3300/getTasks/${id}`,
-      {
-        withCredentials: true,
-      }
-    );
+    const taskPromise = await axiosInstance.get(`/getTasks/${id}`, {
+      withCredentials: true,
+    });
     setLoading(false);
     setData(taskPromise.data);
   }
 
   async function fetchBacklog() {
-    const backlogPromise = await axios.get(
-      `http://localhost:3300/getBackLogs/${id}`,
-      {
-        withCredentials: true,
-      }
-    );
+    const backlogPromise = await axiosInstance.get(`/getBackLogs/${id}`, {
+      withCredentials: true,
+    });
     setLoading(false);
     setbacklog(backlogPromise.data);
   }
